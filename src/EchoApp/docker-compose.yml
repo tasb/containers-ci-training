@@ -1,0 +1,19 @@
+version: '3'
+services:
+  echo-bd:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+  
+  echo-webapp:
+    image: echo-webapp:compose
+    build:
+      context: echo-webapp
+    depends_on:
+      - echo-api
+  
+  echo-api:
+    image: echo-webapi:compose
+    build:
+      context: echo-api
+      dockerfile: ./Dockerfile.multi
+    depends_on:
+      - echo-bd

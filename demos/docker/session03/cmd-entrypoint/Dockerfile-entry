@@ -1,0 +1,3 @@
+FROM myubuntu
+
+ENTRYPOINT ["cowsay", "Yo, ENTRYPOINT !!"]

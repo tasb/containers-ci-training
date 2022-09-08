@@ -1,0 +1,4 @@
+FROM myubuntu
+
+CMD ["Yo, CMD !!"]
+ENTRYPOINT ["cowsay", "Yo, ENTRYPOINT !!"]
