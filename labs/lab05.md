@@ -4,10 +4,19 @@ On this lab you'll add unit testing to a Echo API and generate the reports for c
 
 ## On this lab
 
+- [Prerequisites](#prerequisites)
 - [Add unit tests](#add-unit-tests)
 - [Create container to run tests](#create-container-to-run-tests)
 - [Run tests](#run-tests)
 - [Check reports](#check-reports)
+
+## Prerequisites
+
+To complete this lab you need to download a new codebase for [Echo API application here](https://github.com/theonorg/echo-api-dotnet-mssql/archive/refs/tags/v1.zip).
+
+Then, decompress this zip a folder and navigate with your console into that root dir.
+
+Finally, open your preferred code editor on that folder to allow you to created the needed files.
 
 ## Add unit tests
 
