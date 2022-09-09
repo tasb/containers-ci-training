@@ -1,6 +1,6 @@
-FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal
 
-LABEL turma=inapa
+LABEL turma=aptiv
 
 EXPOSE 80
 ENV ASPNETCORE_URLS=http://+:80

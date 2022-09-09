@@ -14,7 +14,7 @@
 6) Create TodoWebapp workflow
 7) Commit changes
 8) Show action running
-9) Chnage branch rules
+9) Change branch rules
 10) git checkout -b topic/change-homepage
 11) Do a change on webapp
 12) Commit changes

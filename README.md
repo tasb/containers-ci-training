@@ -62,10 +62,11 @@ On next links you may find the hands-on exercises to give you more experience on
 
 You may navigate for each one individually or you may follow the sequence starting on first one and proceed to the next using the navigation links at the end of each lab.
 
-Module #1. [Introduction to containers](labs/lab01.md)
-Module #2. [How to create my own container](labs/lab02.md)
-Module #3. [Persistence in containers](labs/lab03.md)
-Module #4. [Let's compose your containers](labs/lab04.md)
+- Module #1: [Introduction to containers](labs/lab01.md)
+- Module #2: [How to create my own container](labs/lab02.md)
+- Module #3: [Persistence in containers](labs/lab03.md)
+- Module #4: [Let's compose your containers](labs/lab04.md)
+- Module #6: [Unit test my API](labs/lab05.md)
 
 ## ToDo App project
 
@@ -78,13 +79,13 @@ With this simple ToDo App you have the hands-on experience to create all needed 
 
 Get access to the content used to share Kubernetes concepts during sessions.
 
-Module #1. [Introduction to containers](slides/Module01.pdf)
-Module #2. [Dockerfile and Tags](slides/Module02.pdf)
-Module #3. [Persistence in containers](slides/Module03.pdf)
-Module #4. [Docker compose](slides/Module04.pdf)
-Module #5. [Microservices](slides/Module05.pdf)
-Module #6. [Unit Testing](slides/Module06.pdf)
-Module #7. [Continuous Integration](slides/Module07.pdf)
+- Module #1. [Introduction to containers](slides/Module01.pdf)
+- Module #2. [Dockerfile and Tags](slides/Module02.pdf)
+- Module #3. [Persistence in containers](slides/Module03.pdf)
+- Module #4. [Docker compose](slides/Module04.pdf)
+- Module #5. [Microservices](slides/Module05.pdf)
+- Module #6. [Unit Testing](slides/Module06.pdf)
+- Module #7. [Continuous Integration](slides/Module07.pdf)
 
 ## Feedback
 
