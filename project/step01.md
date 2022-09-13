@@ -78,4 +78,4 @@ dotnet build "MyProject.csproj" -c Release -o /app/build
 dotnet publish "MyProject.csproj" -c Release -o /app/publish
 ```
 
-You can take a look on the sample [EchoApp](https://github.com/tasb/containers-ci-training/tree/main/src/EchoApp) used during session demos.
+You can take a look on the sample [EchoApp](https://github.com/theonorg/containers-ci-training/tree/main/src/EchoApp) used during session demos.
