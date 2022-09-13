@@ -103,7 +103,7 @@ jobs:
     env:
       DOCKER_USER: ${{ secrets.DOCKER_USER }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      IMAGE_NAME: ${{ secrets.DOCKER_USER }}/aptiv-echo/api:${{ github.run_id }}
+      IMAGE_NAME: ${{ secrets.DOCKER_USER }}/aptiv-echo-api:${{ github.run_id }}
 
     runs-on: ubuntu-latest
     needs: build
@@ -264,7 +264,7 @@ jobs:
     env:
       DOCKER_USER: ${{ secrets.DOCKER_USER }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      IMAGE_NAME: ${{ secrets.DOCKER_USER }}/aptiv-echo/webapp:${{ github.run_id }}
+      IMAGE_NAME: ${{ secrets.DOCKER_USER }}/aptiv-echo-webapp:${{ github.run_id }}
 
     runs-on: ubuntu-latest
     needs: build
