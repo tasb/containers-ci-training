@@ -74,7 +74,7 @@ You may navigate for each one individually or you may follow the sequence starti
 With this simple ToDo App you have the hands-on experience to create all needed artifacts to deploy an app on Kubernetes.
 
 - Step #1: [Create images and run using docker compose](project/step01.md)
-- Step #2: Create GitHub Actions for CI
+- Step #2: [Create GitHub Actions for CI](project/step02.md)
 
 ## Slides
 
