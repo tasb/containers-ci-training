@@ -67,6 +67,7 @@ You may navigate for each one individually or you may follow the sequence starti
 - Module #3: [Persistence in containers](labs/lab03.md)
 - Module #4: [Let's compose your containers](labs/lab04.md)
 - Module #6: [Unit test my API](labs/lab05.md)
+- Module #7: [Enable CI on your codebase](labs/lab06.md)
 
 ## ToDo App project
 

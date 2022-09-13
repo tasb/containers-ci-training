@@ -1,0 +1,49 @@
+name: TodoAPI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'src/**'
+      - '.github/workflows/calc-lib.yml'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: |
+        dotnet restore src/CalcLib/CalcLib.csproj
+        dotnet restore src/CalcLib.Tests/CalcLib.Tests.csproj
+    
+    - name: Build
+      run: |
+        dotnet build --no-restore src/CalcLib/CalcLib.csproj
+        dotnet build --no-restore src/CalcLib.Tests/CalcLib.Tests.csproj
+    
+    - name: Test
+      run: dotnet test --no-build src/CalcLib.Tests/CalcLib.Tests.csproj --verbosity normal --logger "trx;LogFileName=test-results.trx"
+      
+    - name: Test Report
+      uses: dorny/test-reporter@v1
+      if: always()
+      with:
+        name: Todo API Tests
+        path: '**/TestResults/*.trx'
+        reporter: dotnet-trx
+    
+    - name: Publish
+      run: |
+        dotnet publish --no-build src/CalcLib/CalcLib.csproj -o src/CalcLib/publish
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: CalcLib
+        path: src/CalcLib/publish

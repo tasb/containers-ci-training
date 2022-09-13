@@ -9,7 +9,7 @@
             "type": "docker",
             "request": "attach",
             "platform": "netCore",
-            "containerName": "echoapp-echo-api-1",
+            "containerName": "echoapp_echo-api_1",
             "sourceFileMap": {
                 "/src/echo-api": "${workspaceFolder}/echo-api"
             }
